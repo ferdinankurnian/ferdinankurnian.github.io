@@ -3,6 +3,13 @@ export default {
       "./index.html",
       "./src/**/*.{vue,js,ts,jsx,tsx}",
     ],
-    // theme: {...}, // Opsional di v4 (jika ingin custom)
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Roboto', 'sans-serif'],
+          courgette: ['Courgette', 'cursive'],
+        },
+      },
+    },
     plugins: [],
   }

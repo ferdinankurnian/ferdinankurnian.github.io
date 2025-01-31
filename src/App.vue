@@ -1,5 +1,25 @@
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+</script>
+
 <template>
-  <div class="animate-bounce text-6xl text-emerald-500 font-mono">
+  <nav class="flex justify-between items-center px-[50px] py-[15px] bg-gray-800 text-white">
+    <div>
+      <RouterLink to="/" class="text-2xl font-semibold">FKN.</RouterLink>
+    </div>
+    <div class="flex space-x-6">
+      <RouterLink to="/about">About</RouterLink>
+      <RouterLink to="/projects">Projects</RouterLink>
+      <RouterLink to="/blog">Blog</RouterLink>
+      <RouterLink to="/contact">Contact</RouterLink>
+      <button class="cursor-pointer flex items-center justify-center">
+        <span style="font-size: 20px;" class="material-symbols-outlined">search</span>
+      </button>
+    </div>
+  </nav>
+
+  <RouterView />
+  <div class="text-6xl text-emerald-500 font-mono">
     You're Awesome! 🚀
   </div>
   <div>
